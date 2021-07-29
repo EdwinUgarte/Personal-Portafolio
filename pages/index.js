@@ -22,7 +22,7 @@ const Inicio = () => (
 			color="white"
 			textAlign="center"
 			fontFamily="Lobster"
-			textShadow="20px 20px 20px #000"
+			textShadow="20px 20px 20px #111"
 			flexDirection="column"
 			justifyContent="center"
 		>
