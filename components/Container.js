@@ -1,19 +1,16 @@
 import Head from "next/head";
+import { Box } from "@chakra-ui/react";
 import Navbar from "./NavBar";
 
 const Container = (props) => (
-	<div>
+	<Box>
 		<Head />
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css"
-		/>
-		<Navbar position="fixed" />
-		<div className="container" padding-4px>
+		<Navbar color position="fixed" />
+		<Box className="container" padding-4px>
 			{props.children}
-		</div>
-	</div>
+		</Box>
+	</Box>
 );
 
 export default Container;

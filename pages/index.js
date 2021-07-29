@@ -1,71 +1,87 @@
 import Head from "next/head";
-import { Flex, Image, Box } from "@chakra-ui/react";
-
+import { Flex, Image, Box, Link } from "@chakra-ui/react";
 import Container from "../components/Container";
 
 const Inicio = () => (
-	<div>
+	<Box bgColor="#222" width="100vw" h="100vh">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+			rel="stylesheet"
+		/>
 		<Head>
 			<title>Ugarte</title>
 		</Head>
 		<Container />
 
 		<Box
-			bg="tomato"
-			w="100vw"
-			height="100%"
-			fontSize="80px"
-			paddingTop="10%"
-			paddingBottom="10%"
+			d="flex"
+			bgGradient="linear(65deg, black, #205D9B)"
+			width="100%"
+			height="50%"
+			fontSize={{ base: "24px", md: "40px", lg: "56px" }}
 			color="white"
 			textAlign="center"
-			fontFamily="monospace"
-			p="200"
+			fontFamily="Lobster"
+			textShadow="20px 20px 20px #000"
+			flexDirection="column"
+			justifyContent="center"
 		>
 			Ing Edwin Ugarte
 		</Box>
-		<Flex>
+		<Flex width="100%">
 			<Box
 				p="10"
-				w="50%"
+				w="50vw"
 				color="white"
-				textAlign="center"
 				fontFamily="fantasy"
 				fontSize="18px"
-				bg="grey"
+				bg="#34495E"
+				d="flex"
+				flexDirection="column"
+				alignItems="center"
 			>
-				<a
-					href="https://www.uaeh.edu.mx/"
-					target="_blank"
-					textDecoration="none"
-					rel="noreferrer"
-				>
-					Egresado de la UAEH
-				</a>
+				<Link href="https://www.uaeh.edu.mx/" target="_blank">
+					<Image
+						src="https://www.uaeh.edu.mx/imagen/imagenes/2020/recursos/uaeh.png"
+						alt="UAEH-LOGO"
+						w="300"
+						h="100"
+						_hover={{ transform: "scale(1.04)" }}
+					/>
+				</Link>
 			</Box>
 
 			<Box
 				p="10"
-				w="50%"
+				w="50vw"
 				color="white"
 				textAlign="center"
 				fontFamily="fantasy"
 				fontSize="18px"
-				bg="#AF7AC5 "
+				bg="#E67E22"
+				d="flex"
+				flexDirection="column"
+				alignItems="center"
 			>
-				<a href="https://codepen.io/pen/" target="_blank" rel="noreferrer">
-					¡Si lo piensas, lo creas!
-				</a>
+				<Link href="https://nextjs.org/" target="_blank">
+					<Image
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+						alt="UAEH-LOGO"
+						w="400"
+						h="110"
+						_hover={{ transform: "scale(1.04)" }}
+					/>
+				</Link>
 			</Box>
 		</Flex>
-		<Flex>
+		<Flex width="100vw">
 			<Box boxSize="sm" width="33.3%">
 				<Image
 					src="https://scontent.fmex37-1.fna.fbcdn.net/v/t1.6435-9/185980349_4076648385716739_5423786365248012213_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeGd6BjuDYn1BdAOu0ZU4JWve7dEmgOC63R7t0SaA4LrdMPDYk790R2aJ_kqdS6vh7HtJgmEwCEdR9g8Gv6BoH38&_nc_ohc=ZsmE9D-Nwi4AX8p_pUM&tn=aw4AZn0OScVgY8hq&_nc_ht=scontent.fmex37-1.fna&oh=08bd061fa2e88427d6cf12ba0ee8e7a6&oe=612686BD"
 					alt="Edwin Ugarte"
 					alignItems="center"
-					width="200%"
-					maxH="500px"
+					width="100%"
+					maxH="400px"
 				/>
 			</Box>
 			<Box boxSize="sm" width="33.3%">
@@ -74,7 +90,7 @@ const Inicio = () => (
 					alt="Edwin Ugarte"
 					alignItems="center"
 					width="100%"
-					maxH="500px"
+					maxH="400px"
 				/>
 			</Box>
 			<Box boxSize="sm" width="33.3%">
@@ -83,11 +99,11 @@ const Inicio = () => (
 					alt="Edwin Ugarte"
 					alignItems="center"
 					width="100%"
-					maxH="450px"
+					maxH="400px"
 				/>
 			</Box>
 		</Flex>
-	</div>
+	</Box>
 );
 
 export default Inicio;

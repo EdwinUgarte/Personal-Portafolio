@@ -3,12 +3,12 @@ import { Box } from "@chakra-ui/react";
 import Container from "../components/Container";
 
 const Contacto = () => (
-	<div>
+	<Box>
 		<Head>
 			<title>Contacto</title>
 		</Head>
 		<Container />
-	</div>
+	</Box>
 );
 
 export default Contacto;
