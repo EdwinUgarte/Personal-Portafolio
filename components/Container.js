@@ -7,7 +7,7 @@ const Container = (props) => (
 		<Head />
 
 		<Navbar color position="fixed" />
-		<Box className="container" padding-4px>
+		<Box className="container" padding="4px">
 			{props.children}
 		</Box>
 	</Box>
