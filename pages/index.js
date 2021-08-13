@@ -139,7 +139,7 @@ const Inicio = () => (
 					fontSize={["10px", "20px", "30px"]}
 				>
 					<br />
-					"El único modo de hacer un gran trabajo es amar lo que haces" <br />- Steve Jobs
+					El único modo de hacer un gran trabajo es amar lo que haces <br />- Steve Jobs
 				</Text>
 			</Box>
 		</Flex>

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./NavBar";
